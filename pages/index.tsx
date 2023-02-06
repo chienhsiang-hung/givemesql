@@ -8,10 +8,7 @@ import Github from "../components/GitHub";
 import Header from "../components/Header";
 import LoadingDots from "../components/LoadingDots";
 import ResizablePanel from "../components/ResizablePanel";
-
-import React from "react";
 import { CopyBlock, dracula } from "react-code-blocks";
-
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
