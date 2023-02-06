@@ -86,7 +86,7 @@ const Home: NextPage = () => {
               gtag('js', new Date());
     
               gtag('config', 'G-EB1W4TXEV1');
-            `
+            `,
           }}
         />
         {/* <!-- AdSense --> */}
