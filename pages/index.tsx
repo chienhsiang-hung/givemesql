@@ -129,7 +129,7 @@ const Home: NextPage = () => {
                     </h2>
                   </div>
                   <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto">
-                    <div
+                    {/* <div
                       className="bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 transition cursor-copy border"
                       onClick={() => {
                         navigator.clipboard.writeText(generatedBios.toString());
@@ -140,8 +140,7 @@ const Home: NextPage = () => {
                       key={generatedBios.toString()}
                     >
                       <p>{generatedBios}</p>
-                    </div>
-
+                    </div> */}
                     <div>
                       <CopyBlock
                         text={generatedBios.toString()}
@@ -150,7 +149,6 @@ const Home: NextPage = () => {
                         theme={dracula}
                       />
                     </div>
-
                   </div>
                 </>
               )}
