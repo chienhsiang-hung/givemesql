@@ -75,20 +75,17 @@ const Home: NextPage = () => {
         {/* <!-- GSC --> */}
         <meta name="google-site-verification" content="SyEY88jadkmY5tP6AMEBi5rqu2hNV4P81pJ6uTusYFM" />
         {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-EB1W4TXEV1" />
-        <Script
-          id='google-analytics'
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-    
-              gtag('config', 'G-EB1W4TXEV1');
-            `,
-          }}
-        />
+        <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-EB1W4TXEV1" />
+        <Script strategy="lazyOnload">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-EB1W4TXEV1', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
         {/* <!-- AdSense --> */}
         <Script id="Adsense-id" data-ad-client="ca-pub-5348991030538024"
           async strategy="afterInteractive"
