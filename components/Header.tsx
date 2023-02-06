@@ -16,7 +16,7 @@ export default function Header() {
           twitterBio.com
         </h1>
       </Link>
-      <a
+      {/* <a
         href="https://vercel.com/templates/next.js/twitter-bio"
         target="_blank"
         rel="noreferrer"
@@ -28,7 +28,7 @@ export default function Header() {
           width={32}
           height={28}
         />
-      </a>
+      </a> */}
     </header>
   );
 }
