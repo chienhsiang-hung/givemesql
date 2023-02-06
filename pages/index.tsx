@@ -20,7 +20,7 @@ const Home: NextPage = () => {
     e.preventDefault();
     setGeneratedBios("");
     setLoading(true);
-    const response = await fetch("https://www.twitterbio.com/api/generate", {
+    const response = await fetch("https://givemesql.vercel.app/api/generate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
