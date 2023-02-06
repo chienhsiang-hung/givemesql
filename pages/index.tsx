@@ -9,6 +9,7 @@ import Header from "../components/Header";
 import LoadingDots from "../components/LoadingDots";
 import ResizablePanel from "../components/ResizablePanel";
 import { CopyBlock, dracula } from "react-code-blocks";
+import Script from "next/script"
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
@@ -58,8 +59,42 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Twitter Generator</title>
+        <title>SQL Query Generator</title>
         <link rel="icon" href="/favicon.ico" />
+        {/* <!-- SEO --> */}
+        <meta property="og:title" content="SQL Query Generator"/>
+        <meta property="og:url" content="https://chienhsiang-hung.github.io/givemesql/"/>
+        <meta property="og:image" content=""/>
+        <meta name="keywords" content="SQL Query Generator"/>
+        <meta property="og:description" name="description" content="SQL Query Generator"/>
+        <meta name="author" content="Hung, Chien-Hsiang"/>
+        <meta name="copyright" content=""/>
+        <meta http-equiv="expires" content="0"/>
+        <meta http-equiv="pragma" content="no-cache"/>
+        <meta http-equiv="cache-control" content="no-cache"/>
+        {/* <!-- GSC --> */}
+        <meta name="google-site-verification" content="SyEY88jadkmY5tP6AMEBi5rqu2hNV4P81pJ6uTusYFM" />
+        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-EB1W4TXEV1" />
+        <Script
+          id='google-analytics'
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+    
+              gtag('config', 'G-EB1W4TXEV1');
+            `
+          }}
+        />
+        {/* <!-- AdSense --> */}
+        <Script id="Adsense-id" data-ad-client="ca-pub-5348991030538024"
+          async strategy="afterInteractive"
+          onError={ (e) => { console.error('Script failed to load', e) }}
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+        />
       </Head>
 
       <Header />
