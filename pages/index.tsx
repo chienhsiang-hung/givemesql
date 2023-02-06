@@ -64,7 +64,7 @@ const Home: NextPage = () => {
         {/* <!-- SEO --> */}
         <meta property="og:title" content="SQL Query Generator"/>
         <meta property="og:url" content="https://chienhsiang-hung.github.io/givemesql/"/>
-        <meta property="og:image" content=""/>
+        <meta property="og:image" content="https://github.com/chienhsiang-hung/chienhsiang-hung.github.io/raw/main/android-chrome-512x512.png"/>
         <meta name="keywords" content="SQL Query Generator"/>
         <meta property="og:description" name="description" content="SQL Query Generator"/>
         <meta name="author" content="Hung, Chien-Hsiang"/>
