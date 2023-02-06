@@ -1,11 +1,4 @@
-// next.config.js
+/** @type {import('next').NextConfig} */
 module.exports = {
-  async rewrites() {
-      return [
-        {
-          source: '/api/:path*',
-          destination: 'https://givemesql.vercel.app/:path*',
-        },
-      ]
-    },
-};
+  reactStrictMode: true,
+}
