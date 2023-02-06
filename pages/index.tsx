@@ -86,12 +86,6 @@ const Home: NextPage = () => {
             });
           `}
         </Script>
-        {/* <!-- AdSense --> */}
-        <Script id="Adsense-id" data-ad-client="ca-pub-5348991030538024"
-          async strategy="afterInteractive"
-          onError={ (e) => { console.error('Script failed to load', e) }}
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        />
       </Head>
 
       <Header />
