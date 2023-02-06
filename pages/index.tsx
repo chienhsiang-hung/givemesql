@@ -9,6 +9,10 @@ import Header from "../components/Header";
 import LoadingDots from "../components/LoadingDots";
 import ResizablePanel from "../components/ResizablePanel";
 
+import React from "react";
+import { CopyBlock, dracula } from "react-code-blocks";
+
+
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [bio, setBio] = useState("");
@@ -140,6 +144,16 @@ const Home: NextPage = () => {
                     >
                       <p>{generatedBios}</p>
                     </div>
+
+                    <div>
+                      <CopyBlock
+                        text={generatedBios.toString()}
+                        language='sql'
+                        wrapLines
+                        theme={dracula}
+                      />
+                    </div>
+
                   </div>
                 </>
               )}
