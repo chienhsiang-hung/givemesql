@@ -25,9 +25,6 @@ const Home: NextPage = () => {
     setLoading(true);
     const response = await fetch("https://givemesql.vercel.app/api/generate", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
       body: JSON.stringify({
         prompt,
       }),
